@@ -1,2 +1,2 @@
 # zewo-bio
-Bio site designed and made by me.
+Site is still underconstruction lol, come back later at another time.
