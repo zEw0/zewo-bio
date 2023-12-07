@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
+    box-sizing: border-box;
+}
+.Background{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+.Blur{
+position: absolute;
+z-index: 5;
+width: 100%;
+height: 100%;
+backdrop-filter: blur(10px);
+}
+.MainCard{
+    width: 400px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -765px;
+    background: linear-gradient(153.14deg, rgba(209, 209, 209, 0.4), rgba(83, 92, 97, 0.15) 49.32%, rgba(24, 24, 24, 0.05));
+    box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.MainCard:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 40px;
+	padding: 1px;
+	pointer-events: none;
+	background: linear-gradient(135deg, rgba(203, 203, 203), rgba(19, 35, 43, 0.1));
+	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	mask-composite: destination-out;
+	mask-composite: exclude;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: destination-out;
+	-webkit-mask-composite: exclude;
+}
+.ProfilePicture{
+    width: 140px;
+    height: 140px;
+    left: 18px;
+    top:18px;
+    position: absolute;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+    border: 5px #392C2C solid;
+    /*background-image: url("https://cdn.discordapp.com/avatars/465691254332719104/a_9033da79cd8a4b0f0456d3a1c9864038.gif");*/
+    /*background-repeat: no-repeat;*/
+}
+.UsernameText{
+    width: 156px;
+    height: 65px;
+    left: 197px;
+    top: 15px;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-family: Poppins;
+    font-weight: 800;
+    word-wrap: break-word;
+}
+.StatusSymbol{
+    width: 25px;
+    height: 25px;
+    left: 197px;
+    top: 97px; 
+    position: absolute; 
+    background: #7D7D7D; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25); 
+    border-radius: 9999px;
+}
+.StatusText{
+    width: 115px; 
+    height: 40px; 
+    left: 230px; 
+    top: 92px; 
+    position: absolute; 
+    color: #7D7D7D; 
+    font-size: 27px; 
+    font-family: Poppins; 
+    font-weight: 800;
+    word-wrap: break-word;
+}
+.AboutMeLine1{
+    width: 121px; 
+    height: 0px; 
+    right: 67%; 
+    top: 200px; 
+    position: absolute; 
+    border: 0.25px #F0F0F0 solid;
+}
+/*.AboutMeLine1{
+    width: 121px; 
+    height: 0px; 
+    left: 8px; 
+    top: 200px; 
+    position: absolute; 
+    border: 0.25px #F0F0F0 solid;
+}*/
+.AboutMeLine2{
+    width: 121px; 
+    height: 0px; 
+    left: 67%;
+    top: 200px; 
+    position: absolute; 
+    border: 0.25px #F0F0F0 solid;
+}
+/*.AboutMeLine2{
+    width: 121px; 
+    height: 0px; 
+    left: 270px; 
+    top: 200px; 
+    position: absolute; 
+    border: 0.25px #F0F0F0 solid;
+}*/
+.AboutMeText{
+    width: 101px; 
+    height: 30px; 
+    left: 150px; 
+    top: 185px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 20px; 
+    font-family: Poppins; 
+    font-weight: 800; 
+    word-wrap: break-word
+}
+.BioText{
+    width: 381px; 
+    height: 38px; 
+    left: 10px;
+    top: 227px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 15px; 
+    font-family: Poppins; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+.Btn{
+    width: 37px; 
+    height: 37px;
+    border-radius: 9999px;
+    border: 1px solid rgba(99, 99, 99, 100%);
+    background: rgba(184, 184, 184, 0.836);
+    box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.801);
+    position: absolute;
+    opacity: 0.25;
+    box-sizing: content-box;
+}
+.Btn:hover{
+    background: rgba(53, 53, 53, 0.836);
+    border: 1px solid rgb(66, 66, 66);
+}
+.DiscordButton{
+    margin-top: 75%;
+    margin-left: 185px;
+    position: absolute;
+}
+.DiscordIcon{
+    background-image: url(discord.svg);
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    
+}
+.YouTubeButton{
+    margin-top: 75%;
+    margin-left: 135px;
+    position: absolute;
+}
+.YouTubeIcon{
+    background-image: url(youtube.svg);
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    
+}
+.GithubButton{
+    margin-top: 75%;
+    margin-left: 235px;
+    position: absolute;
+}
+.GithubIcon{
+    background-image: url(github.svg);
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    
+}
+.AppleEmbed{
+    margin-top: 450px;
+    margin-left: 20px;
+    width: 100%;
+    max-width: 360px;
+    overflow: hidden; 
+    border-radius: 10px; 
+    transform: translateZ(0px); 
+    animation: 2s ease 0s 6 normal none running loading-indicator; 
+    background-color: rgb(228, 228, 228);
+}
