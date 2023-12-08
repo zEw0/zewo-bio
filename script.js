@@ -48,7 +48,7 @@ fetch("https://api.lanyard.rest/v1/users/465691254332719104").then((a) => a.json
 	            Pos += (Invert ? -1 : 1);
 
 	            if (CurStr.length == 0)
-	                CurStr = "k";
+	                CurStr = "z";
 
 	            document.getElementsByTagName("title")[0].innerHTML = CurStr;
 	        }
