@@ -1,2 +1,1 @@
-# zewo-bio
-Site is still underconstruction lol, come back later at another time.
+Just a little cool project of mine cause I got bored lol.
