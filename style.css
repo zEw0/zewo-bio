@@ -192,7 +192,7 @@ backdrop-filter: blur(10px);
     position: absolute;
 }
 .DiscordIcon{
-    background-image: url(discord.svg);
+    background-image: url(icons/discord.svg/);
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
@@ -207,7 +207,7 @@ backdrop-filter: blur(10px);
     position: absolute;
 }
 .YouTubeIcon{
-    background-image: url(youtube.svg);
+    background-image: url(icons/youtube.svg/);
     margin-right: auto;
     margin-left: auto;
     margin-top: 4;
@@ -222,7 +222,7 @@ backdrop-filter: blur(10px);
     position: absolute;
 }
 .GithubIcon{
-    background-image: url(github.svg);
+    background-image: url(icons/github.svg);
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
