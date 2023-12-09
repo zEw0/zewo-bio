@@ -191,16 +191,57 @@ backdrop-filter: blur(10px);
     margin-left: 185px;
     position: absolute;
 }
+/*button icons are not centered yet, will fix later.*/
 .DiscordIcon{
     background-image: url(icons/discord.svg);
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    display: block;
+    vertical-align: middle;
+    display: inline-flex;
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
 }
+#toast{
+    visibility: hidden;
+    width: 200px;
+    height: 50px;
+    margin-left: -125px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: Poppins;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: absolute;
+    z-index: 1;
+    left: 55%;
+    top: 30px;
+}
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
 .YouTubeButton{
     margin-top: 75%;
     margin-left: 135px;
@@ -208,10 +249,10 @@ backdrop-filter: blur(10px);
 }
 .YouTubeIcon{
     background-image: url(icons/youtube.svg);
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 4;
-    display: block;
+    vertical-align: middle;
+    position: absolute;
+    top: 20%;
+    left: 15%;
     width: 25px;
     height: 25px;
     background-repeat: no-repeat;
@@ -223,10 +264,9 @@ backdrop-filter: blur(10px);
 }
 .GithubIcon{
     background-image: url(icons/github.svg);
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    display: block;
+    top: 10%;
+    left: 9.5%;
+    position: absolute;
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;

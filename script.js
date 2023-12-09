@@ -55,3 +55,9 @@ fetch("https://api.lanyard.rest/v1/users/465691254332719104").then((a) => a.json
 
 	        setInterval(loop, 300);
     }
+
+	function showtoast() {
+		var x = document.getElementById("toast");
+		x.className = "show";
+		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+	  } 
